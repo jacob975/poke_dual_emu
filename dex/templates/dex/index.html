@@ -7,10 +7,10 @@
 -->
 <html>
 	<head>
-		<title>Phase Shift by TEMPLATED</title>
+		<title>PokeDex by Jacob975</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
+		<meta name="description" content="The pokemon index provides easy access to the information of each pokemon." />
+		<meta name="keywords" content="pokemon" />
 		<!--[if lte IE 8]><script src="{% static 'dex/css/ie/html5shiv.js' %}"></script><![endif]-->
 		<script src="{% static 'dex/js/jquery.min.js' %}"></script>
 		<script src="{% static 'dex/js/jquery.dropotron.min.js' %}"></script>
@@ -20,6 +20,8 @@
         <link rel="stylesheet" href="{% static 'dex/css/skel.css' %}" />
 		<link rel="stylesheet" href="{% static 'dex/css/style.css' %}" />
 		<link rel="stylesheet" href="{% static 'dex/css/style-wide.css' %}" />
+		<link rel="stylesheet" href="{% static 'dex/css/style-narrow.css' %}" />
+		<link rel="stylesheet" href="{% static 'dex/css/style-normal.css' %}" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="{% static 'dex/css/ie/v8.css' %}" /><![endif]-->
 	</head>
 	<body>
@@ -30,15 +32,23 @@
 				<!-- Header -->
 					<div id="header" class="skel-panels-fixed">
 						<div id="logo">
-							<h1><a href="{% url 'dex:index' %}">Phase Shift</a></h1>
-							<span class="tag">by TEMPLATED</span>
+							<h1><a href="{% url 'dex:index' %}">PokeDex</a></h1>
+							<span class="tag">by Jacob975</span>
 						</div>
 						<nav id="nav">
 							<ul>
 								<li class="active"><a href="{% url 'dex:index' %}">Homepage</a></li>
+								<li><a href="{% url 'dex:index' %}">Pokemon</a></li>
+								<li><a href="{% url 'dex:index' %}">Ability</a></li>
+								<li><a href="{% url 'dex:index' %}">Item</a></li>
+								<li><a href="{% url 'dex:index' %}">Move</a></li>
+								<li><a href="{% url 'dex:index' %}">Type</a></li>
+								<li><a href="{% url 'dex:index' %}">Location</a></li>
+                                <!--
 								<li><a href="{% url 'dex:left-sidebar' %}">Left Sidebar</a></li>
 								<li><a href="{% url 'dex:right-sidebar' %}">Right Sidebar</a></li>
 								<li><a href="{% url 'dex:no-sidebar' %}">No Sidebar</a></li>
+                                -->
 							</ul>
 						</nav>
 					</div>
@@ -46,8 +56,8 @@
 				<!-- Banner -->
 					<div id="banner" class="container">
 						<section>
-							<p>This is <strong>Phase Shift</strong>, a responsive HTML5 site template freebie by <a href="http://templated.co">TEMPLATED</a>. Released for free under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so use it for whatever (personal or commercial) &ndash; just give us credit! Check out more of our stuff at <a href="http://templated.co">our site</a> or follow us on <a href="http://twitter.com/templatedco">Twitter</a>.</p>
-							<a href="#" class="button medium">Read More</a>
+							<p>This is <strong>Pokedex</strong>, a easy-to-used Dex for pokemon informations made by <a href="https://github.com/jacob975">Jacob975</a>.</p>
+							<a href="{% url 'dex:index' %}" class="button medium">Pokedex</a>
 						</section>
 					</div>
 
@@ -58,34 +68,34 @@
 								<section class="4u"> <a href="#" class="image featured"><img src="{% static 'dex/images/pic01.jpg' %}" alt=""></a>
 									<div class="box">
 										<p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum  wisi maecenas ligula.</p>
-										<a href="#" class="button">Read More</a> </div>
+										<a href="#" class="button">Pokedex</a> </div>
 								</section>
 								<section class="4u"> <a href="#" class="image featured"><img src="{% static 'dex/images/pic02.jpg' %}" alt=""></a>
 									<div class="box">
 										<p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum  wisi maecenas ligula.</p>
-										<a href="#" class="button">Read More</a> </div>
+										<a href="#" class="button">Ability Dex</a> </div>
 								</section>
 								<section class="4u"> <a href="#" class="image featured"><img src="{% static 'dex/images/pic03.jpg' %}" alt=""></a>
 									<div class="box">
 										<p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum  wisi maecenas ligula.</p>
-										<a href="#" class="button">Read More</a> </div>
+										<a href="#" class="button">Item Dex</a> </div>
 								</section>
 							</div>
 							<div class="row no-collapse-1">
 								<section class="4u"> <a href="#" class="image featured"><img src="{% static 'dex/images/pic01.jpg' %}" alt=""></a>
 									<div class="box">
 										<p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum  wisi maecenas ligula.</p>
-										<a href="#" class="button">Read More</a> </div>
+										<a href="#" class="button">Move Dex</a> </div>
 								</section>
 								<section class="4u"> <a href="#" class="image featured"><img src="{% static 'dex/images/pic02.jpg' %}" alt=""></a>
 									<div class="box">
 										<p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum  wisi maecenas ligula.</p>
-										<a href="#" class="button">Read More</a> </div>
+										<a href="#" class="button">Type Dex</a> </div>
 								</section>
 								<section class="4u"> <a href="#" class="image featured"><img src="{% static 'dex/images/pic03.jpg' %}" alt=""></a>
 									<div class="box">
 										<p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum  wisi maecenas ligula.</p>
-										<a href="#" class="button">Read More</a> </div>
+										<a href="#" class="button">Location Dex</a> </div>
 								</section>
 							</div>
 						</div>
